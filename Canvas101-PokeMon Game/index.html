@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>First Game</title>
+        <style>
+        
+        </style>
+    
+    </head>
+    <body>
+        <script>
+            var ar="hello";
+            var b=[1,2,3];//making an array 
+            
+            function a(){
+                console.log(ar);
+                console.log(b)
+                b.push(6,7,8,10);
+                console.log(b)
+                b.pop();
+                console.log(b);
+                for(i=0;i<b.length;i++)
+                        console.log(b[i]);
+
+            }
+            a();
+            
+            //making objects 
+            car={
+                model:"BMW",
+                id:"23AS5",
+                seats:4,
+                start:function(){   //functions inside the object
+                    console.log("car started");
+                    a();
+                },
+            };
+            car.driver="swaraj";
+            car.start();
+            console.log(car);
+            
+            //array of objects 
+            obj=[{car,s:"abfiskbf",num:4,},{},{}];
+            console.log(obj[0]);
+        </script>
+    </body>
+</html>
